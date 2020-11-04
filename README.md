@@ -5,17 +5,15 @@ Resolver uses cache to save ip known hostnames for limited TTL
 
 Interaction with resolver is realized using flask webserver.
 
-*API*
-    get-a-records?
-        domain=[DOMAIN_NAME_HERE]
-        &trace=[true/false]
+*API*:
+    get-a-records?domain=[DOMAIN_NAME_HERE]&trace=[true/false]
 
-*RUN*
+*RUN*:
     Start run.py using python3
 
-*EXAMPLE*
+*EXAMPLE*:
 
-REQUEST:
+1. REQUEST:
     curl "localhost:5000/get-a-records?domain=ya.ru&trace=true"
 
 RESPONSE:
@@ -30,7 +28,7 @@ RESPONSE:
     }
 
 
-REQUEST:
+2. REQUEST:
     curl "localhost:5000/get-a-records?domain=google.com"
 
 RESPONSE:
